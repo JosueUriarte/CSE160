@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asg3: World</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="550" height="550">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <h1> Vaporwave Cityscape</h1>
+    CONTROLS: Use WASD keys to move around
+    <br>Use Q key to rotate left
+    <br>Use E key to rotate right
+    <p>
+    Camera Angle X:
+    <input type="range" min="-180" max="180" value="0" class="slider" id="cameraAngle">
+    <br>
+    Camera Angle Y:
+    <input type="range" min="-90" max="90" value="0" class="slider" id="cameraAngle2">
+    <br>
+    FOV:
+    <input type="range" min="0" max="200" value="50" class="slider" id="FOV">
+    <p>
+    <h6>known bugs that need fixing in the future:<br>
+        -Rotate sometimes goes crazy and doesnt rotate properly<br>
+        -No collision on buildings<br>
+        -Holding keys for movement is not smooth<br>
+        -Not able to look around using mouse controls
+    </h6>
+    
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="asg3.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Triangle.js"></script>
+
+  </body>
+</html>

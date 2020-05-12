@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Asg0:Vectors</title>
+	</head>
+
+	<body onload="main()">
+		<canvas id="canvas" width="400" height="400">
+		Please use a browser that supports "canvas"
+		</canvas>
+
+		<br>
+
+		v1:
+		<label for="xinput">x</label>
+		<input type="number" id="xinput" name="xinput">
+
+		<label for="yinput">y</label>
+		<input type="number" id="yinput" name="yinput">
+
+		<br>
+
+		v2:
+		<label for="xinput2">x</label>
+		<input type="number" id="xinput2" name="xinput2">
+
+		<label for="yinput2">y</label>
+		<input type="number" id="yinput2" name="yinput2">
+
+		<br><br>
+
+		<button type="button" onclick="handleDrawEvent()">Draw</button>
+
+		<br><br>
+
+		Operation:
+		<select id="operation" name="operation">
+			<option value="add">Add</option>
+			<option value="sub">Subtract</option>
+			<option value="mult">Multiply</option>
+			<option value="div">Divide</option>
+			<option value="angle">Angle Between</option>
+			<option value="area">Area</option>
+			<option value="mag">Magnitude</option>
+			<option value="norm">Normalize</option>
+		</select>
+
+		Scalar:
+  		<input type="number" id="scalar" name="scalar">
+
+		<br><br>
+
+		<button type="button" onclick="handleDrawOperationEvent()">Draw</button>
+
+		<script src="asg0.js"></script>
+		<script src="lib/cuon-matrix-cse160.js"></script>
+
+
+	</body>
+
+
+</html>
